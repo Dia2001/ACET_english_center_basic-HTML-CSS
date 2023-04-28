@@ -1,16 +1,30 @@
 * {
   box-sizing: border-box;
 }
-html,
-body {
+
+html,body {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .clear {
   clear: both;/*ngăn chặn thành phần
    A chiếm vùng không gian của thành
     phần B (với thành phần B là thành
      phần sử dụng float).*/
 }
+
+h2{
+    text-transform: uppercase;
+    margin: 50px 0 20px; /* T-LR_B*/
+    text-align: center;
+    word-spacing: 5px; /* Tăng giảm khoảng trắng giữa các từ*/
+}
+
+.line_img{
+    margin: 0 auto;
+    display: block;/* why display blok with margin*/
+}
+
 /* HEADER */
 
 .header .img_left {
@@ -57,6 +71,14 @@ ul li a {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/* INTRODUCTION */
+.intro p{
+    line-height: 20px;
+    text-align: center;
+    padding: 0 30px;
+}
+
 
 /* FOOTER */
 
