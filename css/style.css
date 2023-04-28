@@ -48,6 +48,16 @@ ul li a {
   font-size: 1.13vw;
 }
 
+/* CAROUSEL */
+
+.carousel{
+    background-image: url(../img/slider_hoc-tieng-anh_acet-1536x728.jpg);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 /* FOOTER */
 
 /*
