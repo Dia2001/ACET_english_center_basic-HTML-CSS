@@ -1,44 +1,83 @@
 * {
   box-sizing: border-box;
 }
-html,body {
+html,
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
-.clear{
-    clear: both;
+.clear {
+  clear: both;/*ngăn chặn thành phần
+   A chiếm vùng không gian của thành
+    phần B (với thành phần B là thành
+     phần sử dụng float).*/
 }
 /* HEADER */
-.header .img_left{
-    float: left;
-    width: 280px;
+
+.header .img_left {
+  float: left;
+  width: 280px;
 }
-.header .img_right{
-    float: right;
+.header .img_right {
+  float: right;
 }
-ul{
-    list-style: none; /* mất dấu chấm*/
-    text-align: center;
-    border-top: 1px solid rgb(196, 190, 190);
-    border-bottom: 1px solid rgb(196, 190, 190);
-    padding: 15px 0;
+ul {
+  list-style: none; /* mất dấu chấm*/
+  text-align: center;
+  border-top: 1px solid rgb(196, 190, 190);
+  border-bottom: 1px solid rgb(196, 190, 190);
+  padding: 15px 0;
 }
-ul li{
-    display: inline;
+ul li {
+  display: inline;
 }
 
-ul li:hover{
-    border-bottom: 2px solid rgb(163, 28, 28);
+ul li:hover {
+  border-bottom: 2px solid rgb(163, 28, 28);
 }
 
-ul .active{
-    border-bottom: 2px solid rgb(163, 28, 28);
+ul .active {
+  border-bottom: 2px solid rgb(163, 28, 28);
 }
 
-ul li a{
-    text-decoration: none; /* Mất dấu gạch chân*/
-    color: rgb(51, 48, 48);
-    font-weight: 700; /* Làm cho chữ mập lên*/
-    text-transform: uppercase; /* Viết hoa hết tất cả*/
-    padding: 0 1em;
-    font-size: 1.13vw;
+ul li a {
+  text-decoration: none; /* Mất dấu gạch chân*/
+  color: rgb(51, 48, 48);
+  font-weight: 700; /* Làm cho chữ mập lên*/
+  text-transform: uppercase; /* Viết hoa hết tất cả*/
+  padding: 0 1em;
+  font-size: 1.13vw;
+}
+
+/* FOOTER */
+
+/*
+.footer {
+    background-color: crimson;
+    color: white;
+    padding: 20px;
+    height: 150px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+  Nếu ko có nội dung như thế này sẽ giúp menu nằm dưới
+  */
+
+.footer {
+  background-color: crimson;
+  color: white;
+  padding: 20px 20px;
+  height: 150px;
+}
+
+.footer img {
+  width: 280px;
+  float: left;
+}
+
+.footer p {
+  float: right;
+  width: 45%;
+  line-height: 22px;
 }
