@@ -79,6 +79,30 @@ ul li a {
     padding: 0 30px;
 }
 
+/* PROGRAMS */
+
+.programs .programs_item{
+  float: left;
+  width: 25%;
+  padding:0 10px;
+}
+
+.programs .programs_item img{
+  width: 100%;
+}
+
+.programs .programs_item h3{
+  text-transform: uppercase;
+  font-size: 16px;
+  color: brown;
+  margin: 20px 0 10px;
+}
+
+.programs .programs_item p{
+  margin: 0;
+  line-height: 17px;
+  font-size: 15px;
+}
 
 /* FOOTER */
 
