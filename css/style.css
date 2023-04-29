@@ -2,27 +2,29 @@
   box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .clear {
-  clear: both;/*ngăn chặn thành phần
+  clear: both; /*ngăn chặn thành phần
    A chiếm vùng không gian của thành
     phần B (với thành phần B là thành
      phần sử dụng float).*/
 }
 
-h2{
-    text-transform: uppercase;
-    margin: 50px 0 20px; /* T-LR_B*/
-    text-align: center;
-    word-spacing: 5px; /* Tăng giảm khoảng trắng giữa các từ*/
+h2 {
+  text-transform: uppercase;
+  margin: 50px 0 20px; /* T-LR_B*/
+  text-align: center;
+  word-spacing: 5px; /* Tăng giảm khoảng trắng giữa các từ*/
 }
 
-.line_img{
-    margin: 0 auto;
-    display: block;/* why display blok with margin*/
+.line_img {
+  margin: 0 auto;
+  display: block; /* đóng khối mới margin được*/
+  padding-bottom: 30px;
 }
 
 /* HEADER */
@@ -64,46 +66,93 @@ ul li a {
 
 /* CAROUSEL */
 
-.carousel{
-    background-image: url(../img/slider_hoc-tieng-anh_acet-1536x728.jpg);
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.carousel {
+  background-image: url(../img/slider_hoc-tieng-anh_acet-1536x728.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* INTRODUCTION */
-.intro p{
-    line-height: 20px;
-    text-align: center;
-    padding: 0 30px;
+.intro p {
+  line-height: 20px;
+  text-align: center;
+  padding: 0 30px;
 }
 
 /* PROGRAMS */
 
-.programs .programs_item{
+.programs .programs_item {
   float: left;
   width: 25%;
-  padding:0 10px;
+  padding: 0 10px;
 }
 
-.programs .programs_item img{
+.programs .programs_item img {
   width: 100%;
 }
 
-.programs .programs_item h3{
+.programs .programs_item h3 {
   text-transform: uppercase;
   font-size: 16px;
   color: brown;
   margin: 20px 0 10px;
 }
 
-.programs .programs_item p{
+.programs .programs_item p {
   margin: 0;
   line-height: 17px;
   font-size: 15px;
 }
 
+/* NEW */
+
+.news {
+  margin-bottom: 50px;
+}
+
+.news .big_item {
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.news .news_small {
+  float: left;
+  width: 50%;
+}
+
+.news .image {
+  width: 100%;
+  display: block;
+}
+
+.news .news_inside {
+  position: relative; /* Định vị trí so với vị trí bình thường của nó*/
+}
+
+.news .news_inside p {
+  position: absolute; /* ăn theo */
+  width: 100%;
+  bottom: 9px; /* áp đặt cho ăn theo */
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.712);
+}
+
+.news .news_inside hr {
+  height: 5px;
+  color: brown;
+  background-color: brown;
+  margin-top: 5.5px;
+}
+.news .news_item {
+  padding: 0px 10px 4px;
+}
 /* FOOTER */
 
 /*
